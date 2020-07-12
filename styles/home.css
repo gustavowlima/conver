@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#page {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 37%;
+    background-color: white;
+    min-width: 328px;
+}
+
+main h2 {
+    font-weight: 200;
+    color: #848484;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 10%;
+}
+
+main form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .input-float {
+    width: 80%;
+    height: 60px;
+    background-color: #F3F3F3;
+    margin: 20px 0 0 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+main .input-float span {
+    display: flex;
+    background-image: url('../assets/number.svg');
+    width: 33px;
+    height: 23px;
+    margin-left: 15px;
+}
+
+main form .input-float:nth-child(2) span {
+    background-image: url('../assets/messenger.svg');
+}
+
+main .input-float label {
+    pointer-events: none;
+    position: absolute;
+    margin-left: 54px;
+    text-transform: uppercase;
+    color: #848484;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+main .input-float input {
+    background-color: #F3F3F3;
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 60px;
+    border-radius: 10px;
+    padding: 0 10px;
+    flex-grow: 1;
+    font-size: 16px;
+    color: #848484;
+
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+main .input-float input:focus+label,
+.input-float input:not(:placeholder-shown)+label {
+    font-size: 10px;
+    margin-top: -16px;
+    color: #B8B8B8;
+}
+
+main a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 50px;
+    height: 50px;
+    margin-top: 40px;
+    background: #23D49F;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+    transition: 0.1s;
+}
+
+main a:hover {
+    box-shadow: 0px 9px 15px rgba(35, 213, 159, 0.25);
+    background-color: #21BB8D;
+}
+
+main form p {
+    margin-top: 20px;
+    color: #848484;
+    font-size: 11px;
+}
+
+section {
+    background: url('../assets/Abstract-Envelope.svg') no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-grow: 1;
+}
+
+#passos {
+    margin-left: 10%;
+}
+
+#passos li:nth-child(1) {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 10px 15px 20px 0;
+}
+
+#passos li {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 22px;
+    list-style: none;
+    margin: 10px 15px 0 0;
+}
+
+#passos li strong {
+    margin-left: 5px;
+}
+
+#passos li img {
+    margin-right: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    left: calc(16% - 100px);
+    right: 0;
+    margin: 0 0 10px 0;
+    position: fixed;
+    bottom: 0;
+    font-size: 12px;
+    font-weight: 200;
+    font-family: 'Roboto Condensed', sans-serif;
+}

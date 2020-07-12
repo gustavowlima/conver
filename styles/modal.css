@@ -1,0 +1,186 @@
+
+/* Modal */
+#modal {
+    background: url('../assets/Abstract-Envelope.svg') no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal.hide{
+    display: none;
+}
+
+#aviso.hide{
+    display: none;
+}
+
+#modal .content {
+    width: 95%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 19px 17px #0000001f;
+}
+
+
+#modal #title {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    
+}
+
+#modal .content h2 {
+    font-weight: 200;
+    color: #848484;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 45px 0 20px;
+ 
+}
+
+#modal .content h3 {
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    color: #23D49F;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 35px 0 15px
+}
+#modal .content h3 img {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    margin-right: 5px;
+}
+
+
+#modal .content .result {
+    display: flex;
+    width: 84%;
+    height: 80px;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    align-items: center;
+}
+
+#modal .content .result span {
+    display: flex;
+    background-image: url('../assets/link.svg');
+    width: 33px;
+    height: 23px;
+    margin: 0 15px 0 10px;
+}
+
+#modal .content .result input {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 457px;
+    font-size: 18px;
+    color: #848484;
+    border: none;
+    cursor: text;
+    padding-right: 10px;
+}
+
+#copiar{
+    display: flex;
+    background-color: #00000010;
+    width: 70px;
+    height: 80px;
+    border-radius: 0 10px 10px 0;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+}
+
+#copiar .check_icon{
+    background-image: url(../assets/check_copy.svg);
+    display: block;
+    width: 30px;
+    height: 30px;
+
+}
+
+#copiar:hover{
+    background-color: #23D49F;
+}
+
+#copiar:hover svg{
+    fill: white;
+ }
+
+
+ .buttonW{
+    cursor: pointer;
+    width: 84%;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #23D49F;
+    margin-top: 40px;
+    background: #23D49F;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: 0.1s; 
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .buttonW:hover{
+     background-color: #21BB8D;
+ }
+   a.newLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 84%;
+    height: 50px;
+    border: 1px solid #23D49F;
+    border-radius: 50px;
+    margin-top: 16px;
+    background: white;
+    color: #23D49F;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: 0.1s; 
+ }
+ a.newLink:hover{
+     background-color: #21BB8D;
+     color: white;
+ }
+
+ #aviso{
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     bottom: 0px;
+     width: 100vw;
+     height: 85px;
+     background-color: #FF5252;
+     margin: 0;
+     animation: slide-up 0.5s both;
+     animation-iteration-count: 1;
+
+ }
+
+ #aviso p{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    color: white;
+ }

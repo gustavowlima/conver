@@ -1,0 +1,42 @@
+@media (max-width: 700px) {
+    main {
+        width: 100%;
+    }
+
+    section {
+        display: none;
+    }
+
+    main .input-float{
+        width: 86%;
+       }
+
+    main button{
+        width: 86%;
+    }
+
+    main h2{
+        margin-left: 7%;
+    }
+
+    #modal #title {
+        align-items: center;
+    }
+    footer{
+        left: calc(37% - 100px);
+    }
+}
+
+@media (max-width: 535px){
+    #modal .content .result span {
+        width: 43px;
+        margin: 0 6px 0 10px;
+    }
+}
+
+@media (max-width: 535px){
+    #modal .content .result, #modal #title, .buttonW, a.newLink  {
+        width: 92%;
+    }
+
+}

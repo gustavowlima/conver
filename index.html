@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/modal.css">
+        <link rel="stylesheet" href="styles/animations.css">
+        <link rel="stylesheet" href="styles/responsive.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Conver</title>
+    </head>
+    <body>
+        <div id="page">
+            <main>
+                <h2>Gerador de Link para Whatsapp</h2>
+                <form action="">
+                    <div class="input-float">
+                        <span></span>
+                        <input type="number" maxlength="10" placeholder=" ">
+                        <label>Número</label>
+
+                </div>
+                <div class="input-float" input-float">
+                        <span></span>
+                        <input name="mensagem" type="text" placeholder=" ">
+                        <label>Mensagem</label>
+
+            </div>
+            <a id="criar" href="#">
+                        <strong>GERAR LINK</strong>
+                    </a>
+                    <p>Não guardamos nenhum dado informado!</p>
+                </form>
+
+            </main>
+            <section>
+                <div id="passos">
+                    <li>
+                        4 passos para criar seu link personalizado
+                    </li>
+                    <li><img src="assets/number1.svg">
+                        Insira o nº do WhatsApp</li>
+                    <li><img src="assets/number2.svg">Se desejar, escreva uma mensagem
+                    </li>
+                    <li><img src="assets/number3.svg">Clique em 
+                        <strong>GERAR LINK</strong>
+                    </li>
+                    <li><img src="assets/number4.svg">Copie ou Abra diretamente no Whatsapp</li>
+                </div>
+            </section>
+
+            <div id="modal" class="hide modalslideUp">
+                <div class="content">
+                    <div id="title">
+                        <h2>Gerador de Link para Whatsapp</h2>
+                        <h3><img src="assets/check.svg" alt="check">
+                            Link Gerado com Sucesso!</h3>
+                    </div>
+                    <div class="result">
+                        <span></span>
+                        <input id="result" name="result" type="text" disabled>
+                        <a id="copiar" href="#" onclick="copy()">
+                        <svg width="25" height="25" viewbox="0 0 25 30" fill="#848484" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.7916 30H3.2084C1.43854 30 0 28.4587 0 26.5624V9.68741C0 7.79112 1.43854 6.25006 3.2084 6.25006H3.7916C4.2746 6.25006 4.6666 6.67006 4.6666 7.18756C4.6666 7.70506 4.2746 8.12506 3.7916 8.12506H3.2084C2.40454 8.12506 1.75 8.82613 1.75 9.68741V26.5624C1.75 27.4237 2.40454 28.125 3.2084 28.125H17.7916C18.5955 28.125 19.25 27.4237 19.25 26.5624V25.9376C19.25 25.4201 19.642 25.0001 20.125 25.0001C20.608 25.0001 21 25.4201 21 25.9376V26.5624C21 28.4587 19.5615 30 17.7916 30V30Z"/>
+                                <path d="M22.4584 22.5H10.2084C8.43854 22.5 7 20.9587 7 19.0624V3.43758C7 1.54129 8.43854 0 10.2084 0H22.4584C24.2283 0 25.6666 1.54129 25.6666 3.43758V19.0624C25.6666 20.9587 24.2283 22.5 22.4584 22.5ZM10.2084 1.875C9.40454 1.875 8.75 2.57629 8.75 3.43758V19.0624C8.75 19.9237 9.40454 20.625 10.2084 20.625H22.4584C23.2623 20.625 23.9166 19.9237 23.9166 19.0624V3.43758C23.9166 2.57629 23.2623 1.875 22.4584 1.875H10.2084Z"/>
+                            </svg>
+                            <i></i>
+                        </a>
+                    </div>
+                    <a class="buttonW" href="#" target="_blank">
+                        <strong>Abrir no Whatsapp</strong>
+                    </a>
+                    <a class="newLink" href="#">
+                        <strong>Gerar novo link</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/link.js"></script>
+                    <div id="aviso" class="hide" onclick="avisoRemove()">
+                <p>Informe um número válido</p>
+            </div>
+            <footer>Feito com ❤ Gustavo Wellington</footer>
+    </body>
+</html>

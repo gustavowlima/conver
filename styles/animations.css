@@ -1,0 +1,29 @@
+.modalslideUp{
+    animation: slide-up 0.3s both;
+    animation-iteration-count: 1;
+}
+
+.modalslideDown{
+    animation: slide-Down 0.6s both;
+    animation-iteration-count: 1;
+}
+
+@keyframes slide-Down{
+ 
+        0%{
+            transform: translateY(0%);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+}
+
+
+@keyframes slide-up{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+ }
