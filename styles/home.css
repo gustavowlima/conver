@@ -177,6 +177,7 @@ section {
 }
 
 footer{
+    color: #848484;
     display: flex;
     justify-content: center;
     width: 320px;

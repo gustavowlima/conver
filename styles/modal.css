@@ -22,6 +22,7 @@
 
 #modal .content {
     width: 95%;
+    max-width: 560px;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -165,7 +166,7 @@
  }
 
  #aviso{
-     position: absolute;
+     position: fixed;
      display: flex;
      justify-content: center;
      align-items: center;
